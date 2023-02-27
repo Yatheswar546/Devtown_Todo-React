@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;background: #066acd;
+}
+header{
+    height:430px;
+    border:1px solid white;
+    border-radius: 20px;
+    background: white;
+    width:350px;
+
+}
+
+
+.to-do-form{
+    width:280px;
+    height:50px;
+    padding:0 20px ;
+    margin:20px;
+}
+
+.to-do-form input {
+    border:0 ;
+    border-bottom:1.5px solid black;
+    width:70%;
+    height:35px ;
+    font-size: 20px;
+}
+
+.to-do-form input::placeholder{
+ color:blue;
+ font-size: 1rem;
+margin-left:4px;
+text-align: left;
+padding-left:10px;
+}
+
+.to-do-form input:focus{
+outline:none
+}
+.to-do-form button {
+    font-size: 1.3rem;
+    float:right;
+    padding:4px;
+    cursor: pointer;
+    color:white;
+    background-color: blue;
+}
+.list{
+    height:50px;
+    margin:20px 25px;
+    border-radius:5px;
+    color:white;
+    background-color: #066acd;
+}
+
+.list input{
+    
+    
+    outline:none;
+    border:0;
+    background-color: transparent;
+    color:white;
+    font-size: 20px;
+    left:20px;
+    padding-left:20px;
+}
+
+.list p{
+    position: relative;
+    padding:10px;
+}
+
+.list p span{
+    position: absolute;
+    right:10px;
+    cursor: pointer;
+}
