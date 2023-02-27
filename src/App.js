@@ -65,13 +65,17 @@ setUpdate(text,key){
   render() {
     return (
       <>
+        <div className='heading'>
+          <h1>React To-Do App</h1>
+          <h4>Enter your Tasks</h4>
+        </div>
         <header>
           <form className='to-do-form' onSubmit={this.addItem}>
             <input
               type='text'
               placeholder='Enter Task'
               value={this.state.currentItem.string}
-              onClick={this.handleInput}
+              onChange={this.handleInput}
             />
             <button type='submit'>Add</button>
           </form>
